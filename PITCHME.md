@@ -178,7 +178,7 @@ cons:
  - boolean isDone();
  - V get() throws InterruptedException, ExecutionException;
  - V get(long timeout, TimeUnit unit) throws InterruptedException, ExecutionException, TimeoutException;
- ```
+```
 
 ---
 
@@ -188,7 +188,7 @@ cons:
  - Actions in a thread prior to the submission of a Runnable or Callable task to an ExecutorService happen-before
  - any actions taken by that task, which in turn happen-before
  - the result is retrieved via Future.get().
- ```
+```
 
 ---
 
@@ -197,7 +197,7 @@ cons:
 ```
  - final boolean completeValue(T t)
  - final boolean completeThrowable(Throwable x)
- ```
+```
 
 ---
 
