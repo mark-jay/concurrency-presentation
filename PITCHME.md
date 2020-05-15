@@ -242,13 +242,55 @@ cons:
 
 ### TODO
 
+```
+    // future
+
+    // definition
+    def callWebServiceAsync(): Future[WebServiceResult] = ???
+    def callDBWriterServiceAsync(webServiceResult: WebServiceResult): Future[DbWriteResult] = ???
+
+    // usage
+    val wsResultFuture: Future[WebServiceResult] = callWebServiceAsync()
+    val dbWriteResultFuture: Future[DbWriteResult] = wsResultFuture.flatMap(wsRes => {
+      callDBWriterServiceAsync(wsRes)
+    })
+```
+
 ---
 
 ### TODO
 
+```
+    // callback hell
+
+    def anotherFutureCall(dbWriteResult: DbWriteResult): Future[DbWriteResult] = ???
+
+    val dbWriteResultFutureNested: Future[DbWriteResult] = callWebServiceAsync().flatMap(wsRes => {
+      callDBWriterServiceAsync(wsRes).flatMap(anotherRes => {
+        anotherFutureCall(anotherRes).flatMap(yetAnotherFutureCallResult => {
+          anotherFutureCall(yetAnotherFutureCallResult).flatMap(r => {
+            ??? // ...
+          })
+
+        })
+      })
+    })
+```
+
 ---
 
 ### TODO
+
+```
+    for {
+      wsRes         <- callWebServiceAsync()
+      anotherRes    <- callDBWriterServiceAsync(wsRes)
+      yetAnotherRes <- anotherFutureCall(anotherRes)
+      result        <- anotherFutureCall(yetAnotherRes)
+    } {
+      ??? // ...
+    }
+```
 
 ---
 
