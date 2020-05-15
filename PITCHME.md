@@ -311,7 +311,7 @@ async function test() {
 ### Actors system
 
 
-```
+```text
  - actor = living instance of a class
  - actors can receive and send async messages to another actors
  - all messages processing happens one by one(one message processing happens before the next message)
