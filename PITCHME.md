@@ -4,31 +4,31 @@
 
 ### Part 1. A bit of baeldung
 
-```
-public class TaskRunner {
+    ```java
+    public class TaskRunner {
 
-    private static int number;
-    private static boolean ready;
+        private static int number;
+        private static boolean ready;
 
-    private static class Reader extends Thread {
+        private static class Reader extends Thread {
 
-        @Override
-        public void run() {
-            while (!ready) {
-                Thread.yield();
+            @Override
+            public void run() {
+                while (!ready) {
+                    Thread.yield();
+                }
+
+                System.out.println(number);
             }
+        }
 
-            System.out.println(number);
+        public static void main(String[] args) {
+            new Reader().start();
+            number = 42;
+            ready = true;
         }
     }
-
-    public static void main(String[] args) {
-        new Reader().start();
-        number = 42;
-        ready = true;
-    }
-}
-```
+    ```
 
 ---
 
