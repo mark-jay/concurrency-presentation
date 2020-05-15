@@ -218,11 +218,9 @@ cons:
 
 ---
 
-### TODO
+### Traditional approach
 
 ```scala
-    // simple
-
     case class WebServiceResult()
     case class DbWriteResult()
 
@@ -240,11 +238,9 @@ cons:
 
 ---
 
-### TODO
+### Future chaining
 
 ```scala
-    // future
-
     // definition
     def callWebServiceAsync(): Future[WebServiceResult] = ???
     def callDBWriterServiceAsync(webServiceResult: WebServiceResult):
@@ -260,11 +256,9 @@ cons:
 
 ---
 
-### TODO
+### Callback hell
 
 ```scala
-    // callback hell
-
     def anotherFutureCall(dbWriteResult: DbWriteResult):
         Future[DbWriteResult] = ???
 
@@ -283,7 +277,7 @@ cons:
 
 ---
 
-### TODO
+### Monad sugar
 
 ```scala
     for {
