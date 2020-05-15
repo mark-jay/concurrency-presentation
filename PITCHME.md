@@ -312,7 +312,6 @@ async function test() {
 
 
 ```
-```
  - actor = living instance of a class
  - actors can receive and send async messages to another actors
  - all messages processing happens one by one(one message processing happens before the next message)
@@ -322,6 +321,8 @@ async function test() {
  - no shared state, only message passing
  - no blocking operations
  - event sourcing support
+
+```
 
 ---
 
