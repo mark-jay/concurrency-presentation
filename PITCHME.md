@@ -164,7 +164,7 @@ compare and swap:
 
 ### Part 3. Approaches to hande concurrency
 
-```
+```text
 1. One request = one thread
 2. Futures + optional async/await syntax sugar
 3. Actor system
@@ -174,7 +174,7 @@ compare and swap:
 
 ### One request per thread
 
-```
+```text
 pros:
  - easy to read and maintain
  - allows ThreadLocal contexts(MDC, audit, etc)
@@ -200,7 +200,7 @@ cons:
 
 ### Futures. Memory consistency effects
 
-```
+```text
  - Actions in a thread prior to the submission of a Runnable or
    Callable task to an ExecutorService happen-before
  - any actions taken by that task, which in turn happen-before
