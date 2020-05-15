@@ -62,9 +62,7 @@
 
 ![Image](https://www.baeldung.com/wp-content/uploads/2017/08/happens-before.png)
 
-```
 - Transitive
-```
 
 ---
 
