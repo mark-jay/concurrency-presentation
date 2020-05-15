@@ -247,13 +247,15 @@ cons:
 
     // definition
     def callWebServiceAsync(): Future[WebServiceResult] = ???
-    def callDBWriterServiceAsync(webServiceResult: WebServiceResult): Future[DbWriteResult] = ???
+    def callDBWriterServiceAsync(webServiceResult: WebServiceResult):
+        Future[DbWriteResult] = ???
 
     // usage
-    val wsResultFuture: Future[WebServiceResult] = callWebServiceAsync()
-    val dbWriteResultFuture: Future[DbWriteResult] = wsResultFuture.flatMap(wsRes => {
-      callDBWriterServiceAsync(wsRes)
-    })
+    val wsResultFuture: Future[WebServiceResult] =callWebServiceAsync()
+    val dbWriteResultFuture: Future[DbWriteResult] =
+      wsResultFuture.flatMap(wsRes => {
+        callDBWriterServiceAsync(wsRes)
+      })
 ```
 
 ---
