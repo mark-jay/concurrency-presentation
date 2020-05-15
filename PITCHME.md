@@ -62,7 +62,7 @@ public class TaskRunner {
 
 ![Image](https://www.baeldung.com/wp-content/uploads/2017/08/happens-before.png)
 
-- Transitive
+Transitive
 
 ---
 
@@ -70,9 +70,11 @@ public class TaskRunner {
 
 ```
 1. Monitor releasing happens-before acquiring the same monitor.
-2. Write to a volatile variable happens-before reading from that variable.
-3. Writing to a final-field during object construction happens-before writing this object to any variable(writing that happens outside of this ctor).
-4. Atomic* classes. The memory effects for accesses and updates of atomics generally follow the rules for volatiles
+2. Write to a volatile variable happens-before reading from that var.
+3. Writing to a final-field during object construction happens-before
+   writing this object to any variable(writing that happens outside of this ctor).
+4. Atomic* classes. The memory effects for accesses and updates of
+   atomics generally follow the rules for volatiles
 ```
 
 ---
