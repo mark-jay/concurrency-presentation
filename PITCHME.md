@@ -20,7 +20,7 @@ public class TaskRunner {
         }
     }
 
-    public static void main(String[] args) {
+    public static void main(String[] args) { // but hard to show:(
         new Reader().start();
         number = 42;
         ready = true;
@@ -46,15 +46,6 @@ public class TaskRunner {
 ### Timing
 
 ![image](https://4.bp.blogspot.com/-fvYQdIN_XRM/URy239FMHPI/AAAAAAAAAGs/Jkqa8T3gbTk/s1600/MemoryHeirarchy.png)
-
----?color=#FFFFFF
-
-### Reproduction
-
-```
- - На машинах с TSO (к коим относится x86) довольно сложно
-   показать ломающий reordering.
-```
 
 ---
 
