@@ -79,10 +79,12 @@ Transitive
 
 ---
 
-### Part 2. Non blocking and blocking algo
+### Part 2. Non blocking and blocking algo. compare and swap
 
 ```
-- Compare and swap
+ - parameters: a pointer, an old value, a new value
+ - tries to write new value into the pointer
+ - returns true if succeeeded, false otherwise
 ```
 
 ---
