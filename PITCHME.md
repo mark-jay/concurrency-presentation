@@ -36,10 +36,12 @@ public class TaskRunner {
 
 [image](!https://www.baeldung.com/wp-content/uploads/2017/08/cpu.png)
 
+```
 - Out of Order Execution
 - Branch Prediction
 - Speculative Execution
 - Visibility - Caching.(CPU flushing fallacy?)
+```
 
 ---
 
