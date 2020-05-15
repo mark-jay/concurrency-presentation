@@ -242,7 +242,7 @@ cons:
 
 ### TODO
 
-```
+```scala
     // future
 
     // definition
@@ -260,7 +260,7 @@ cons:
 
 ### TODO
 
-```
+```scala
     // callback hell
 
     def anotherFutureCall(dbWriteResult: DbWriteResult): Future[DbWriteResult] = ???
@@ -281,7 +281,7 @@ cons:
 
 ### TODO
 
-```
+```scala
     for {
       wsRes         <- callWebServiceAsync()
       anotherRes    <- callDBWriterServiceAsync(wsRes)
