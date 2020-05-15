@@ -7,6 +7,17 @@
 
 ---
 
+## Plan
+
+```text
+- Part1. Volatile, when and why. Happens-before
+- Part2. Blocking and non-blocking algos. Compare-and-swap instruction. Context switch. Thread lifecycle
+- Part3. Different approaches. Thread per request/futures/actor-systems
+
+```
+
+---
+
 ### Part 1. A bit of baeldung
 
 ```java
