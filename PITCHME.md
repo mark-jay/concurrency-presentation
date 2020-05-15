@@ -1,7 +1,3 @@
----?color=linear-gradient(180deg, white 75%, black 25%)
-
-# Let's Get **Started**
-
 ---
 
 ### Part 1. A bit of baeldung
@@ -32,16 +28,18 @@
     }
     ```
 
----?color=linear-gradient(180deg, white 75%, black 25%)
+---
 
 ### A bit of baeldung
 
 ![image](https://www.baeldung.com/wp-content/uploads/2017/08/cpu.png)
 
+```
 - Out of Order Execution
 - Branch Prediction
 - Speculative Execution
 - Visibility - Caching.(CPU flushing fallacy?)
+```
 
 ---
 
