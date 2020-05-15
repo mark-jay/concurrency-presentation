@@ -63,7 +63,7 @@ Transitive
 
 ### JMM. happens-before. examples
 
-```
+```text
 1. Monitor releasing happens-before acquiring the same monitor.
 2. Write to a volatile variable happens-before reading from that var.
 3. Writing to a final-field during object construction happens-before
@@ -139,7 +139,7 @@ compare and swap:
 
 ### Thread states
 
-```
+```text
  - NEW:
  Thread has not yet started.
 
