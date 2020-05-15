@@ -308,4 +308,17 @@ async function test() {
 
 ---
 
-### TODO
+### Actors system
+
+```
+ - actor = living instance of a class
+ - actors can receive and send async messages to another actors
+ - all messages processing happens one by one(one message processing happens before the next message)
+ - single thread illusion
+ - no message delivery guarantees(unless the same JVM)
+ - message ordering guarantees
+ - no shared state, only message passing
+ - no blocking operations
+ - event sourcing support
+
+```
