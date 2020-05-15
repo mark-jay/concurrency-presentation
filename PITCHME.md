@@ -221,7 +221,20 @@ cons:
 ### TODO
 
 ```
-   WebServiceResult wsRes = callWebService();
+    // simple
+
+    case class WebServiceResult()
+    case class DbWriteResult()
+
+    // definition
+    def callWebService(): WebServiceResult = ???
+    def callDBWriterService(webServiceResult: WebServiceResult): DbWriteResult = ???
+
+    // usage
+    val wsResult: WebServiceResult = callWebService()
+    val dbWriteResult: DbWriteResult = callDBWriterService(wsResult)
+    // or
+    val dbWriteResult1: DbWriteResult = callDBWriterService(callWebService())
 
 ```
 
