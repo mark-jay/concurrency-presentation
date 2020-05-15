@@ -1,6 +1,6 @@
 ---
 
-## Hey
+## Concurrency, jvm, approaches
 
 ```
 ```
@@ -11,10 +11,8 @@
 
 ```java
 public class TaskRunner {
-
     private static int number;
     private static boolean ready;
-
     private static class Reader extends Thread {
 
         @Override
