@@ -69,9 +69,9 @@
 ### JMM. happens-before. examples
 
 ```
-1. Освобождение (releasing) монитора happens-before заполучение (acquiring) того же самого монитора.
-2. Запись в volatile переменную happens-before чтение из той же самой переменной.
-3. Запись значения в final-поле при конструировании объекта happens-before запись этого объекта в какую-либо переменную, происходящая вне этого конструктора.
+1. Monitor releasing happens-before acquiring the same monitor.
+2. Write to a volatile variable happens-before reading from that variable.
+3. Writing to a final-field during object construction happens-before writing this object to any variable(writing that happens outside of this ctor).
 4. Atomic* classes. The memory effects for accesses and updates of atomics generally follow the rules for volatiles
 ```
 
