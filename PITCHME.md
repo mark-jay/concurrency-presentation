@@ -92,7 +92,10 @@ Transitive
 ### Non blocking and blocking algo. Example
 
 ```
-- AtomicBigDecimal.incrementAndGet()
+ - AtomicBoolean - ok
+ - AtomicInteger - ok
+ - AtomicReference - ok
+ - AtomicBigDecimal.incrementAndGet() - ???
 ```
 
 ---
