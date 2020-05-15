@@ -34,7 +34,7 @@ public class TaskRunner {
 
 ### A bit of baeldung
 
-[image](!https://www.baeldung.com/wp-content/uploads/2017/08/cpu.png)
+[!image](https://www.baeldung.com/wp-content/uploads/2017/08/cpu.png)
 
 ```
 - Out of Order Execution
