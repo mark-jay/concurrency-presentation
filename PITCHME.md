@@ -75,9 +75,11 @@ Transitive
 
 ---
 
-### Part 2. Non blocking and blocking algo. compare and swap
+### Part 2. Non blocking and blocking algo.
 
 ```
+compare and swap:
+
  - parameters: a pointer, an old value, a new value
  - tries to write new value into the pointer
  - returns true if succeeeded, false otherwise
@@ -129,7 +131,7 @@ Transitive
 
 ---
 
-### Non blocking and blocking algo.
+### Thread life cycle
 
 ![Image](https://media.geeksforgeeks.org/wp-content/uploads/threadLifeCycle.jpg)
 
