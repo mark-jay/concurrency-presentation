@@ -85,7 +85,7 @@ Transitive
 
 ---
 
-### Non blocking and blocking algo. Example
+### Example. Requirements
 
 ```
  - AtomicBoolean - ok
@@ -96,7 +96,7 @@ Transitive
 
 ---
 
-### Non blocking and blocking algo. Example
+### Blocking example
 
 ```
     private BigDecimal value = new BigDecimal(0);
@@ -111,7 +111,7 @@ Transitive
 
 ---
 
-### Non blocking and blocking algo. Example
+### Non blocking example
 
 ```
     private final AtomicReference<BigDecimal> value = new AtomicReference<BigDecimal>(new BigDecimal(0));
