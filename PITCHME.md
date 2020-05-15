@@ -142,7 +142,7 @@
  - WAITING:	Thread is waiting due to one of the these calls; Object.wait(), Thread.join() or LockSupport.park()
  - TIMED_WAITING:	Thread is waiting due to one of these timeout based method calls; Thread.sleep(long millis), Object.wait(long millis), Thread.join(long millis), LockSupport.parkNanos(Object blocker, long nanos) or LockSupport.parkUntil(Object blocker, long nanos)
  - TERMINATED:	A thread has exited from its run() method.
- ```
+```
 
 ---
 
