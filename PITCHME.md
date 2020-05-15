@@ -265,17 +265,19 @@ cons:
 ```scala
     // callback hell
 
-    def anotherFutureCall(dbWriteResult: DbWriteResult): Future[DbWriteResult] = ???
+    def anotherFutureCall(dbWriteResult: DbWriteResult):
+        Future[DbWriteResult] = ???
 
-    val dbWriteResultFutureNested: Future[DbWriteResult] = callWebServiceAsync().flatMap(wsRes => {
-      callDBWriterServiceAsync(wsRes).flatMap(anotherRes => {
-        anotherFutureCall(anotherRes).flatMap(yetAnotherFutureCallResult => {
-          anotherFutureCall(yetAnotherFutureCallResult).flatMap(r => {
-            ??? // ...
+    val dbWriteResultFutureNested: Future[DbWriteResult] =
+      callWebServiceAsync().flatMap(wsRes => {
+        callDBWriterServiceAsync(wsRes).flatMap(anotherRes => {
+          anotherFutureCall(anotherRes).flatMap(yetAnotherR => {
+            anotherFutureCall(yetAnotherR).flatMap(r => {
+              ??? // ...
+            })
+
           })
-
         })
-      })
     })
 ```
 
