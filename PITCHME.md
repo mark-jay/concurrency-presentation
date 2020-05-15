@@ -292,7 +292,19 @@ cons:
 
 ---
 
-### TODO
+### Async Await
+
+```javascript
+async function sayHello(name) {
+  return `Hello, ${name}`;
+}
+console.log(sayHello('Harry')); // returns "Promise { 'Hello, Harry' }"
+
+async function test() {
+  const greeting = await sayHello('Harrison');
+  console.log(greeting);
+}
+```
 
 ---
 
