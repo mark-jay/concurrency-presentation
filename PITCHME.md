@@ -34,7 +34,7 @@ public class TaskRunner {
 
 ### A bit of baeldung
 
-[!image](https://www.baeldung.com/wp-content/uploads/2017/08/cpu.png)
+![image](https://www.baeldung.com/wp-content/uploads/2017/08/cpu.png)
 
 ```
 - Out of Order Execution
@@ -47,7 +47,7 @@ public class TaskRunner {
 
 ### Timing
 
-[image](!https://4.bp.blogspot.com/-fvYQdIN_XRM/URy239FMHPI/AAAAAAAAAGs/Jkqa8T3gbTk/s1600/MemoryHeirarchy.png)
+![image](https://4.bp.blogspot.com/-fvYQdIN_XRM/URy239FMHPI/AAAAAAAAAGs/Jkqa8T3gbTk/s1600/MemoryHeirarchy.png)
 
 ---
 
@@ -60,7 +60,7 @@ public class TaskRunner {
 
 ### JMM. happens-before
 
-[Image](!https://www.baeldung.com/wp-content/uploads/2017/08/happens-before.png)
+![Image](https://www.baeldung.com/wp-content/uploads/2017/08/happens-before.png)
 
 - Transitive
 
@@ -124,7 +124,7 @@ public class TaskRunner {
 
 ### Non blocking and blocking algo.
 
-[Image](!https://media.geeksforgeeks.org/wp-content/uploads/threadLifeCycle.jpg)
+![Image](https://media.geeksforgeeks.org/wp-content/uploads/threadLifeCycle.jpg)
 
 ---
 
