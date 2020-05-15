@@ -220,7 +220,7 @@ cons:
 
 ### TODO
 
-```
+```scala
     // simple
 
     case class WebServiceResult()
