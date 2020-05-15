@@ -228,13 +228,13 @@ cons:
 
     // definition
     def callWebService(): WebServiceResult = ???
-    def callDBWriterService(webServiceResult: WebServiceResult): DbWriteResult = ???
+    def callDBWriterService(p: WebServiceResult): DbWriteResult = ???
 
     // usage
     val wsResult: WebServiceResult = callWebService()
     val dbWriteResult: DbWriteResult = callDBWriterService(wsResult)
     // or
-    val dbWriteResult1: DbWriteResult = callDBWriterService(callWebService())
+    val r1: DbWriteResult = callDBWriterService(callWebService())
 
 ```
 
