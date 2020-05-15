@@ -184,7 +184,8 @@ cons:
 ### Futures. Memory consistency effects
 
 ```
- - Actions in a thread prior to the submission of a Runnable or Callable task to an ExecutorService happen-before
+ - Actions in a thread prior to the submission of a Runnable or
+   Callable task to an ExecutorService happen-before
  - any actions taken by that task, which in turn happen-before
  - the result is retrieved via Future.get().
 ```
