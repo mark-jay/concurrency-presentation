@@ -336,7 +336,7 @@ async function test() {
 
 ---
 
-### Actors system
+### Actors system. Basics and principles
 
 
 ```text
@@ -348,8 +348,6 @@ async function test() {
  - message ordering guarantees
  - no shared state, only message passing
  - no blocking operations
- - event sourcing support
- - netty for io
 ```
 
 
@@ -379,6 +377,22 @@ object Main extends App {
   helloActor ! "hello"
   helloActor ! "buenos dias"
 }
+```
+
+---
+
+### Actors. Further
+
+```text
+ - netty for io
+ - akka streams
+ - supervision
+ - persistnce
+ - scaling out
+ - event sourcing support
+ - custom dispatchers, mailboxes
+ - hocon for application config
+ - Up to 50 million msg/sec on a single machine. Small memory footprint; ~2.5 million actors per GB of heap.
 ```
 
 ---
