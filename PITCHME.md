@@ -142,6 +142,22 @@ compare and swap:
 
 ---
 
+### Implementing mutex
+
+```
+    boolean lock = false
+    ...
+    while (!compareAndSwap(lock, false, true)) {
+        Thread.yield();
+    }
+    // access acquired, do stuff
+
+    // returning lock
+    lock = false
+```
+
+---
+
 ### Thread life cycle
 
 ![Image](https://media.geeksforgeeks.org/wp-content/uploads/threadLifeCycle.jpg)
@@ -327,12 +343,42 @@ async function test() {
  - actors can receive and send async messages to another actors
  - all messages processing happens one by one(one message processing happens before the next message)
  - single thread illusion
- - no message delivery guarantees(unless the same JVM)
+ - at-most-once delivery(unless the same JVM)
  - message ordering guarantees
  - no shared state, only message passing
  - no blocking operations
  - event sourcing support
+ - netty for io
+```
 
+
+---
+
+### Actors example
+
+
+```scala
+class Worker extends Actor {
+  def receive = {
+    case "hello" => println("hello back at you")
+    case _       => println("huh?")
+  }
+}
+
+class HelloActor extends Actor {
+  val worker = context.actorOf(Props[Worker])
+  def receive = {
+    case message => worker.forward(message)
+  }
+}
+
+object Main extends App {
+  val system = ActorSystem("HelloSystem")
+  // default Actor constructor
+  val helloActor = system.actorOf(Props[HelloActor], name = "helloactor")
+  helloActor ! "hello"
+  helloActor ! "buenos dias"
+}
 ```
 
 ---
