@@ -392,7 +392,8 @@ object Main extends App {
  - event sourcing support
  - custom dispatchers, mailboxes
  - hocon for application config
- - Up to 50 million msg/sec on a single machine. Small memory footprint; ~2.5 million actors per GB of heap.
+ - Up to 50 million msg/sec on a single machine.
+ - Small memory footprint; ~2.5 million actors per GB of heap.
 ```
 
 ---
