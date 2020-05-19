@@ -144,7 +144,7 @@ compare and swap:
 
 ### Implementing mutex
 
-```
+```java
     boolean lock = false
     ...
     while (!compareAndSwap(lock, false, true)) {
