@@ -344,7 +344,7 @@ async function test() {
  - actors can receive and send async messages to another actors
  - all messages processing happens one by one(one message processing happens before the next message)
  - single thread illusion
- - at-most-once delivery(unless the same JVM)
+ - at-most-once semantics(unless the same JVM)
  - message ordering guarantees
  - no shared state, only message passing
  - no blocking operations
