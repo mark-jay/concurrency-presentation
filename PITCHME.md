@@ -150,7 +150,8 @@ compare and swap:
     while (!compareAndSwap(lock, false, true)) {
         Thread.yield();
     }
-    // access acquired, do stuff
+    // access acquired
+    doStuff();
 
     // returning lock
     lock = false
