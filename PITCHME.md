@@ -372,7 +372,6 @@ class HelloActor extends Actor {
     case message => worker.forward(message)
   }
 }
-
 object Main extends App {
   val system = ActorSystem("HelloSystem")
   // default Actor constructor
